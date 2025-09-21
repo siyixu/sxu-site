@@ -33,6 +33,12 @@
     <!-- body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--text);background:radial-gradient(1200px 600px at 10% -10%, rgba(138,99,210,0.18), transparent 60%),radial-gradient(900px 500px at 110% 10%, rgba(192,159,255,0.14), transparent 50%),var(--bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
     -->
     a{color:var(--link);text-decoration:none}a:hover{color:var(--link-hover);text-decoration:underline}
+    /* Append an upward arrow to all external links */
+    a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.85em;
+  color: var(--muted); /* use your site’s muted text color */
+}
     .container{width:min(100%,var(--maxw));margin:0 auto;padding:0 20px}
     header{position:sticky;top:0;z-index:20;backdrop-filter:blur(8px);background:color(from var(--bg) srgb r g b / .55);border-bottom:1px solid color(from var(--text) srgb r g b / .08)}
     .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
