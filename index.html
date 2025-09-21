@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Professional Homepage</title>
+  <meta name="description" content="Professional one‑page academic/industry profile for Your Name." />
+  <meta name="color-scheme" content="light dark" />
+  <meta property="og:title" content="Your Name — Professional Homepage" />
+  <meta property="og:description" content="Researcher | Scientist | Engineer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://<your-user>.github.io/<repo>/" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root{--bg:#0f0d15;--panel:#161428;--text:#eae9f5;--muted:#b9b6d3;--brand:#8a63d2;--brand-2:#c09fff;--link:#b58cff;--link-hover:#d4c5ff;--ring:#6f57c2;--maxw:980px;--radius:16px;--shadow:0 10px 30px rgba(0,0,0,0.35);} 
+    @media(prefers-color-scheme:light){:root{--bg:#fcfbff;--panel:#fff;--text:#1d1338;--muted:#5a5275;--brand:#6f42c1;--brand-2:#9d7bf5;--link:#6f42c1;--link-hover:#5830b3;--ring:#a389ff;--shadow:0 10px 20px rgba(93,70,160,0.15);}}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--text);background:var(--bg);}a{color:var(--link);text-decoration:none;}a:hover{color:var(--link-hover);text-decoration:underline;}
+    .container{width:min(100%,var(--maxw));margin:0 auto;padding:0 20px;}
+    header{position:sticky;top:0;z-index:20;backdrop-filter:blur(8px);background:color(from var(--bg) srgb r g b / 0.55);border-bottom:1px solid color(from var(--text) srgb r g b / 0.08);} .nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--text);text-decoration:none;}
+    .brand .dot{width:10px;height:10px;background:linear-gradient(45deg,var(--brand),var(--brand-2));border-radius:50%;}
+    nav a{margin-left:18px;color:var(--muted);}nav a.active{color:var(--text);font-weight:600;}
+    .hero{padding:72px 0 32px;}.hero-inner{display:grid;grid-template-columns:120px 1fr;gap:28px;align-items:center;}
+    .headshot{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));padding:2px;}
+    .headshot img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
+    .title{font-size:clamp(28px,4vw,40px);margin:0;}.subtitle{margin:8px 0 0;color:var(--muted);font-size:18px;}
+    .actions{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;}.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid color(from var(--text) srgb r g b / 0.16);background:color(from var(--panel) srgb r g b / 0.6);color:var(--text);text-decoration:none;}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));border-color:transparent;}
+    section{padding:36px 0;}.card{background:color(from var(--panel) srgb r g b / 0.9);border-radius:var(--radius);} .card h2{margin:0 0 8px;font-size:22px;}.card .content{padding:20px;}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px;}@media(min-width:820px){.grid-2{grid-template-columns:1fr 1fr;}}
+    .list{display:grid;gap:10px;}.list li{list-style:none;background:color(from var(--panel) srgb r g b / 0.5);border-radius:12px;padding:12px 14px;}
+    footer{padding:28px 0 48px;color:var(--muted);text-align:center;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Home"><span class="dot"></span><span>Your Name</span></a>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#observatory">Observatory</a>
+        <a href="#pubs">Publications</a>
+        <a href="#news">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="headshot"><img src="https://via.placeholder.com/400x400.png?text=Headshot" alt="Portrait of Your Name" /></div>
+        <div>
+          <h1 class="title">Your Name</h1>
+          <p class="subtitle">Your Title • Your Affiliation</p>
+          <div class="actions">
+            <a class="btn primary" href="mailto:you@example.com">Email me</a>
+            <a class="btn" href="#cv">CV</a>
+            <a class="btn" href="#pubs">Publications</a>
+            <a class="btn" href="#news">News</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="grid">
+      <article class="card"><div class="content"><h2>About</h2><p>I am a <strong>research astronomer</strong> studying planetary systems around white dwarfs...</p></div></article>
+      <aside class="card"><div class="content"><h2>At a glance</h2><ul class="list"><li><strong>Affiliation:</strong> Your Institute</li><li><strong>Current projects:</strong> Project A, Project B</li><li><strong>Location:</strong> City, Country</li></ul></div></aside>
+    </section>
+
+    <section id="research" class="grid"><article class="card"><div class="content"><h2>Research</h2><p>Describe your research themes, methods, and key findings here.</p></div></article></section>
+
+    <section id="observatory" class="grid"><article class="card"><div class="content"><h2>Observatory Work</h2><p>Highlight your roles in observatory operations, instrumentation, and service work here.</p></div></article></section>
+
+    <section id="work" class="grid grid-2">
+      <article class="card" id="cv"><div class="content"><h2>CV (short)</h2><ul class="list"><li><strong>Position:</strong> Tenure‑track Astronomer...</li><li><strong>Ph.D.:</strong> Your University</li></ul></div></article>
+      <article class="card" id="pubs"><div class="content"><h2>Selected Publications</h2><ul class="list"><li>Lastname, Y. N., <em>et al.</em> <strong>Title of Paper</strong></li><li>Lastname, Y. N., <em>et al.</em> <strong>Another Paper</strong></li></ul></div></article>
+    </section>
+
+    <section id="news" class="grid"><article class="card"><div class="content"><h2>News</h2><ul class="list"><li>Sep 2025 — Invited talk...</li></ul></div></article></section>
+  </main>
+
+  <footer><div class="container"><small>© <span id="year"></span> Your Name. Built with vanilla HTML/CSS.</small></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();const links=document.querySelectorAll('header nav a');const sections=[...links].map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);const onScroll=()=>{const y=scrollY+90;let active=links[0];sections.forEach((sec,i)=>{if(sec.offsetTop<=y)active=links[i];});links.forEach(a=>a.classList.remove('active'));active.classList.add('active');};document.addEventListener('scroll',onScroll,{passive:true});onScroll();</script>
+</body>
+</html>
